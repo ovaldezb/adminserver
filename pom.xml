@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>mx.com.grupoarpa.adminserver</groupId>
 	<artifactId>adminserver</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 	<name>Adminserver</name>
 	<description>MS for management</description>
 	<properties>
@@ -89,7 +89,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!--plugin>
+			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>${dockerfile-maven-version}</version>
@@ -104,13 +104,13 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>ga/ms-${project.artifactId}</repository>
+					<repository>ovaldezb/ms-${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
 					</buildArgs>
 				</configuration>
-			</plugin-->
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
